@@ -10,7 +10,12 @@ import plotly.express as px
 
 
 st.title("Latest Data Professionals Salary")
+st.session_state['answer'] = ''
 
+ if  st.session_state['answer'] in realans:
+        answerStat = "correct"
+    elif st.session_state['answer'] not in realans:
+        answerStat = "incorrect"
 
 def load_data():
     return pd.read_csv("./Partially Cleaned Salary Dataset.csv")
