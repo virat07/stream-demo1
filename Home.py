@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from matplotlib.colors import ListedColormap
 import pandas as pd
 import plotly.express as px
 
@@ -42,7 +41,6 @@ st.markdown("Scatter Graph ❄️")
 # st.sidebar.markdown("# Page 2 ❄️")
 st.write(st.session_state["shared"])
 
-customcmap = ListedColormap(["crimson", "mediumblue", "darkmagenta"])
 fig1 = px.scatter(data, x=data['Salary'], y=data['Location'], color="Salary")
 tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
 with tab1:
