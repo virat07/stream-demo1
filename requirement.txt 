@@ -3,3 +3,4 @@ requests
 pandas
 streamlit
 python-decouple
+plotly.express
